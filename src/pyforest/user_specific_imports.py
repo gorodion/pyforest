@@ -3,11 +3,27 @@ from pathlib import Path
 
 USER_IMPORTS_PATH = Path.home() / ".pyforest" / "user_imports.py"
 
-TEMPLATE_TEXT = """# Add your imports here, line by line
-# e.g
-# import pandas as pd
-# from pathlib import Path
-# import re
+TEMPLATE_TEXT = """
+# cv
+from tqdm.notebook import tqdm
+from tqdm.notebook import trange
+import cv3
+from torch import nn
+import torch.nn.functional as F
+from torch import optim
+from torch.utils.data import DataLoader
+from torchvision import models
+import albumentations as albu
+from albumentations.pytorch import ToTensorV2
+from IPython.display import HTML
+from IPython.display import Video
+
+# standard
+import random
+import math
+import datetime
+import json
+from glob import glob
 """
 
 
